@@ -18,6 +18,8 @@
 		904C1B451FDF3669005DD3F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C1B441FDF3669005DD3F2 /* main.m */; };
 		904C1B4F1FDF3669005DD3F2 /* AuthenticationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C1B4E1FDF3669005DD3F2 /* AuthenticationTests.m */; };
 		904C1B5A1FDF3669005DD3F2 /* AuthenticationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 904C1B591FDF3669005DD3F2 /* AuthenticationUITests.m */; };
+		9075C5101FE215E30044173A /* QuestionScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9075C50F1FE215E30044173A /* QuestionScreen.m */; };
+		9075C5131FE216170044173A /* StartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 9075C5121FE216170044173A /* StartScreen.m */; };
 		90A2A9311FDF427700945C19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A2A9301FDF427700945C19 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,10 @@
 		904C1B551FDF3669005DD3F2 /* AuthenticationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		904C1B591FDF3669005DD3F2 /* AuthenticationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenticationUITests.m; sourceTree = "<group>"; };
 		904C1B5B1FDF3669005DD3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9075C50E1FE215E30044173A /* QuestionScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionScreen.h; sourceTree = "<group>"; };
+		9075C50F1FE215E30044173A /* QuestionScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionScreen.m; sourceTree = "<group>"; };
+		9075C5111FE216170044173A /* StartScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartScreen.h; sourceTree = "<group>"; };
+		9075C5121FE216170044173A /* StartScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartScreen.m; sourceTree = "<group>"; };
 		90A2A9301FDF427700945C19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		92293405CC8F97CC94E2C040 /* libPods-AuthenticationUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AuthenticationUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28C28C276E242450563A881 /* Pods-Authentication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Authentication.release.xcconfig"; path = "Pods/Target Support Files/Pods-Authentication/Pods-Authentication.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +139,10 @@
 				904C1B351FDF3669005DD3F2 /* AppDelegate.h */,
 				904C1B361FDF3669005DD3F2 /* AppDelegate.m */,
 				904C1B381FDF3669005DD3F2 /* ViewController.h */,
+				9075C5111FE216170044173A /* StartScreen.h */,
+				9075C5121FE216170044173A /* StartScreen.m */,
+				9075C50E1FE215E30044173A /* QuestionScreen.h */,
+				9075C50F1FE215E30044173A /* QuestionScreen.m */,
 				904C1B391FDF3669005DD3F2 /* ViewController.m */,
 				904C1B3B1FDF3669005DD3F2 /* Main.storyboard */,
 				904C1B3E1FDF3669005DD3F2 /* Assets.xcassets */,
@@ -466,7 +476,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				904C1B3A1FDF3669005DD3F2 /* ViewController.m in Sources */,
+				9075C5131FE216170044173A /* StartScreen.m in Sources */,
 				904C1B451FDF3669005DD3F2 /* main.m in Sources */,
+				9075C5101FE215E30044173A /* QuestionScreen.m in Sources */,
 				904C1B371FDF3669005DD3F2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
