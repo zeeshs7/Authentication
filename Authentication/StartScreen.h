@@ -8,11 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+NSInteger addition;
+NSInteger subtraction;
+NSInteger multiplication;
+NSInteger division;
+
+
 @interface StartScreen : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *mathematicQuizLabel;
 
-@property (weak, nonatomic) IBOutlet UILabel *beginLabel;
+
 
 
 

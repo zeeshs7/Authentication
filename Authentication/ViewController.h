@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)createNewAccount:(UIButton *)sender;
+
 
 @end
 

@@ -138,11 +138,11 @@
 			children = (
 				904C1B351FDF3669005DD3F2 /* AppDelegate.h */,
 				904C1B361FDF3669005DD3F2 /* AppDelegate.m */,
-				904C1B381FDF3669005DD3F2 /* ViewController.h */,
 				9075C5111FE216170044173A /* StartScreen.h */,
 				9075C5121FE216170044173A /* StartScreen.m */,
 				9075C50E1FE215E30044173A /* QuestionScreen.h */,
 				9075C50F1FE215E30044173A /* QuestionScreen.m */,
+				904C1B381FDF3669005DD3F2 /* ViewController.h */,
 				904C1B391FDF3669005DD3F2 /* ViewController.m */,
 				904C1B3B1FDF3669005DD3F2 /* Main.storyboard */,
 				904C1B3E1FDF3669005DD3F2 /* Assets.xcassets */,

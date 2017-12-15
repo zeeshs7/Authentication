@@ -44,6 +44,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyH-uB-yrh">
                                 <rect key="frame" x="0.0" y="599" width="375" height="68"/>
                                 <state key="normal" backgroundImage="Create New Account"/>
+                                <connections>
+                                    <action selector="createNewAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ldr-rc-MRJ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="center" minimumFontSize="17" background="Password" translatesAutoresizingMaskIntoConstraints="NO" id="mVc-gX-04b">
                                 <rect key="frame" x="31" y="356" width="313" height="50"/>
@@ -89,41 +92,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THL-VX-lM5">
-                                <rect key="frame" x="142" y="617" width="91" height="30"/>
-                                <state key="normal" title="Start!">
-                                    <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Jqn-4e-8bt" kind="show" id="k1K-JP-XyW"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MATHEMATICS QUIZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f72-57-xPi">
                                 <rect key="frame" x="16" y="75" width="343" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click Start To Begin!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aI0-sz-wiw">
-                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose A Topic To Begin!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aI0-sz-wiw">
+                                <rect key="frame" x="16" y="626" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Muj-Uu-7Us">
+                                <rect key="frame" x="16" y="250" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button1:" destination="Jqn-4e-8bt" eventType="touchUpInside" id="a3F-hL-i3f"/>
+                                    <segue destination="Jqn-4e-8bt" kind="show" id="dzD-R6-q6W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gI2-Du-M3g">
+                                <rect key="frame" x="16" y="300" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button1:" destination="Jqn-4e-8bt" eventType="touchUpInside" id="SXX-Zy-kwU"/>
+                                    <segue destination="Jqn-4e-8bt" kind="show" id="gg2-AW-3d2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmu-9h-D6S">
+                                <rect key="frame" x="16" y="350" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button1:" destination="Jqn-4e-8bt" eventType="touchUpInside" id="asO-Sk-ZfT"/>
+                                    <segue destination="Jqn-4e-8bt" kind="show" id="77W-Zz-TSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1Y-Rm-Khv">
+                                <rect key="frame" x="16" y="400" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button1:" destination="Jqn-4e-8bt" eventType="touchUpInside" id="qzy-At-z2p"/>
+                                    <segue destination="Jqn-4e-8bt" kind="show" id="pJg-bV-Gw3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.87135380510000005" green="0.31203004719999999" blue="0.50381749870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Lwz-UZ-k9C" firstAttribute="trailing" secondItem="f72-57-xPi" secondAttribute="trailing" constant="16" id="1B0-1h-qFj"/>
-                            <constraint firstItem="THL-VX-lM5" firstAttribute="leading" secondItem="Lwz-UZ-k9C" secondAttribute="leading" constant="142" id="Chc-6U-cV2"/>
+                            <constraint firstItem="aI0-sz-wiw" firstAttribute="trailing" secondItem="f72-57-xPi" secondAttribute="trailing" id="3Fb-V1-z8W"/>
                             <constraint firstItem="f72-57-xPi" firstAttribute="leading" secondItem="Lwz-UZ-k9C" secondAttribute="leading" constant="16" id="EWj-Oi-kqg"/>
-                            <constraint firstItem="aI0-sz-wiw" firstAttribute="centerY" secondItem="jMa-0N-U7N" secondAttribute="centerY" id="Fk1-xn-Oau"/>
-                            <constraint firstItem="aI0-sz-wiw" firstAttribute="leading" secondItem="f72-57-xPi" secondAttribute="leading" id="XFE-Fd-xwL"/>
-                            <constraint firstItem="Lwz-UZ-k9C" firstAttribute="bottom" secondItem="THL-VX-lM5" secondAttribute="bottom" constant="20" id="Xb8-ga-hFa"/>
                             <constraint firstItem="Lwz-UZ-k9C" firstAttribute="trailing" secondItem="f72-57-xPi" secondAttribute="trailing" constant="16" id="fdE-jc-kqH"/>
-                            <constraint firstItem="Lwz-UZ-k9C" firstAttribute="trailing" secondItem="THL-VX-lM5" secondAttribute="trailing" constant="142" id="u46-xi-hJV"/>
+                            <constraint firstAttribute="bottom" secondItem="aI0-sz-wiw" secondAttribute="bottom" constant="20" symbolic="YES" id="gfc-Ua-c4V"/>
                             <constraint firstItem="f72-57-xPi" firstAttribute="leading" secondItem="Lwz-UZ-k9C" secondAttribute="leading" constant="16" id="vRo-h4-upg"/>
-                            <constraint firstItem="aI0-sz-wiw" firstAttribute="trailing" secondItem="f72-57-xPi" secondAttribute="trailing" id="vdY-ux-bLY"/>
                             <constraint firstItem="f72-57-xPi" firstAttribute="top" secondItem="Lwz-UZ-k9C" secondAttribute="top" constant="55" id="z1S-bD-s7T"/>
+                            <constraint firstItem="aI0-sz-wiw" firstAttribute="leading" secondItem="f72-57-xPi" secondAttribute="leading" id="zw2-pc-Xdw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Lwz-UZ-k9C"/>
                     </view>
@@ -242,10 +269,6 @@
                         <outlet property="answer2" destination="RKD-4r-ka4" id="4tE-Oo-6A1"/>
                         <outlet property="answer3" destination="hOQ-qp-Two" id="bsL-ft-L7o"/>
                         <outlet property="answer4" destination="Yn8-0I-tVb" id="RiY-4q-mBp"/>
-                        <outlet property="button1" destination="unx-4W-cFj" id="ziC-G8-868"/>
-                        <outlet property="button2" destination="RKD-4r-ka4" id="Eul-sh-cYd"/>
-                        <outlet property="button3" destination="hOQ-qp-Two" id="DDd-Sg-vs8"/>
-                        <outlet property="button4" destination="Yn8-0I-tVb" id="pmn-Cl-8lf"/>
                         <outlet property="mathsQuestionLabel" destination="JUH-KW-Vdu" id="Hr2-rV-bun"/>
                     </connections>
                 </viewController>
@@ -262,7 +285,7 @@
         <image name="logo" width="221" height="228"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="k1K-JP-XyW"/>
+        <segue reference="77W-Zz-TSo"/>
         <segue reference="CH1-MM-XfK"/>
     </inferredMetricsTieBreakers>
 </document>
