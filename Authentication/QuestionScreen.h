@@ -25,7 +25,7 @@ int selectedQuestion;
 
 @property (weak, nonatomic) IBOutlet UILabel *mathsQuestionLabel;
 
-@property (strong, nonatomic) IBOutlet UIView *answer1;
+@property (strong, nonatomic) IBOutlet UIButton *answer1;
 
 @property (weak, nonatomic) IBOutlet UIButton *answer2;
 
